@@ -34,19 +34,18 @@ app.use(cors(corsOptions));
 //app.use(fileUpload());
 const db = require("./models/");
 const Role = db.role;
-const User = db.user;
 
 db.sequelize
   .sync({
-    /*force: true,*/
-    
+    /**/
+    force: true,
   })
   .then(() => {
     console.log(
-      //"Drop and Resync Db"
-      "No Drop & Resync"
+      "Drop and Resync Db"
+      //"No Drop & Resync"
     );
-    //initial();
+    initial();
   });
 
 function initial() {

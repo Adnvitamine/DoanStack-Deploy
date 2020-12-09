@@ -1,3 +1,6 @@
+git rm -r --cached node_modules
+git commit -am 'ignore node_modules'
+
 "username": "Adn",
     "email": "doan88nguyen@gmail.com",
     "password": "admin123",
