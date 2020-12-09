@@ -38,15 +38,15 @@ const User = db.user;
 
 db.sequelize
   .sync({
-    /**/
-    force: true,
+    /*force: true,*/
+    
   })
   .then(() => {
     console.log(
-      "Drop and Resync Db"
-      //"No Drop & Resync"
+      //"Drop and Resync Db"
+      "No Drop & Resync"
     );
-    initial();
+    //initial();
   });
 
 function initial() {
