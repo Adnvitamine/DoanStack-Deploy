@@ -1,0 +1,221 @@
+"username": "Adn",
+    "email": "doan88nguyen@gmail.com",
+    "password": "admin123",
+    "roles": ["admin", "moderator", "user"]
+
+    "username": "Alisa",
+    "email": "alisa.tanwattana@gmail.com",
+    "password": "admin123",
+    "roles": ["moderator", "user"]
+
+
+"name": "Cola",
+    "image": "",
+    "description": "Enjoy the Taste",
+    "price": 2.25,
+    "category": "Drinks",
+    "vendor": "Adn",
+    "vendor_id": 1,
+    "status": true
+
+
+    Thailand is the travel hub of Southeast Asia. Most visitors coming into the region fly into Bangkok and make that their base for doing the circuit as they backpack around Southeast Asia.It’s the most visited country in the region – and with good reason!  Thailand speaks for itself. When you hear its name, you already think about beaches, beauty, jungles, and food. And your thoughts are spot on.With its lush jungles, famed beaches, world-class diving, amazing food, friendly and cheap prices, Thailand is by far my favorite country in the world! I’ve been coming to the country since 2005, lived there for 2 years, and always seem pulled back to it. It’s an easy country to travel and you can meet a lot of other people there.Thailand has a lot to offer travelers – no matter your budget. You can backpack Thailand here on a limited budget or you can live the luxurious travel life in fancy resorts on the beach.Or just travel on a modest budget and get a lot of bang for your buck.The country has something for everyone.Backpacking Thailand is often the way most people travel around but that doesn’t mean really roughing it. You can travel Thailand well without spending a lot of money. I consider myself a backpacker but that doesn’t mean I’m in dorm rooms all the time. You can get private rooms and nice meals for cheap.The country is a well-worn destination on the backpacking trail and everything is convenient and easy. However, there are still many off the beaten path destinations away from the crowds and the prices they bring.This Thailand travel guide will tell you how to travel the country like a pro, what to do avoid, how much things cost, the best things to see, and everything in between! You should use this guide if you’re looking to a) backpack Thailand, b) looking for ideas on thing to do, or c) trying to travel on a budget.
+
+
+    Chiang Mai is the largest and most culturally significant city in northern Thailand and the main base of activities for most travelers who come up north.Whether you want to backpack Chaing Mai, visit on a budget, or enjoy the luxury hotels here, you will find Chiang Mai full of culture, friendly locals, incredible food markets, dozens of beautiful temples, a relaxed vibe, beautiful landscapes. It’s even become something of the new “it” spot for expats and digital nomads in the last few years.You can find a lot of delicious Western food, cafes, and bars all around the city but, despite that, the old Thai-ness of the city hasn’t gone away and a visit here will leave you enamored.Be sure to budget extra time when you visit Chiang Mai and as it’s easy to get stuck here. Lots of people plan to stay for a few days and end up staying for a few weeks or more! There’s just a magic to this city.This travel guide to Chiang Mai can help you plan your trip, eat well, and save money!
+
+    Bangkok, Thailand: famous for its chaotic streets, cheap and delicious street food, wild nightlife, and never-ending traffic.It’s a city most travelers either love or hate. I used to hate it when I first traveled to Bangkok but, when I got to know it more, I changed my mind.When I moved to Bangkok in 2006, I fell madly in love with it.Most travelers just pass through here when they backpack or travel around Thailand. But there’s a lot to see and do in Bangkok.People hate the city because they don’t know it.When you look beyond the chaos and peel back Bangkok’s layers, the city comes alive with endless things to do, see, explore, eat, and drink.It’s a city that opens itself up to those who are willing to get past all the temples and backpacker bars.This Bangkok travel guide shows you there’s more to Thailand’s “City of Angels” than you think by helping you plan the trip of a lifetime.
+
+    Ko Pha Ngan is located in the Gulf of Thailand and is on of the premier backpacking destination in Southeast Asia.Tourists started discovering this area in the 1980s, and due to the fame of the Full Moon Parties, it has been popular ever since.Lots and lots of people backpack around Ko Pha Ngan or just travel to the island for a beach holiday.This is a pretty heavy party destination, especially around the madness that is Haat Rin (location of the Full Moon Party) but, if you head to the northern or eastern beaches on the island, they tend to be a lot more low-key and relaxed than busy Haat Rin.There’s a lot of yoga and nature resorts here to get away from it all.It’s a big reason why people visit Ko Pha Ngan.So, in short, don’t let the island’s party reputation put you off. There’s a lot to this place.This Ko Pha Ngan travel guide can help you plan your trip, make the most of your time there, and avoid spending lots of money too!
+
+    Phuket is one of the biggest destinations for travelers in Thailand. 😉Backpacking Phuket, visiting here on a holiday, coming to learn Muay Thai, or sitting on the resorts – everyone travels to Phuket eventually for something!The island is the biggest all of the country and contains a wide range of beaches and environments to see.This is where you see all the good and bad of Thai tourism – from overdeveloped beaches and sex tourism, to tiny towns with no tourists and authentic Thailand.But, while most visitors, stick to the overdeveloped south, if you stay away from Patong Beach, you can avoid most of the over-development and crowds. The north part of the island is one of my favorite places to visit in all of Thailand.It is a paradise without the crowds, prices, or crazy drunk tourists!Phuket draws a lot of tourists, and if you really want to enjoy the area, get out of the main spots.This travel guide to Phuket will give you the best places to visit, tell you how to save money, how to get around, give you costs, and help you plan the best trip to this island!
+
+    Ko Phi Phi is one of the most popular tourist islands in Thailand. 😀Traveling to there for a short stay or just backpacking around Ko Phi Phi is one of the most popular things for people to do while they are in Thailand.From beautiful Maya Bay (made famous by the Leonardo DiCaprio movie: The Beach) to the monkeys on the aptly named “Monkey Beach” to the diving, nightlife, and resorts, Phi Phi is one of the biggest destinations in the country.Destroyed by the tsunami in 2004, the island has been rebuilt and developed to an even greater extent than before.Though I’ve had a lot of fun here, I don’t particularly like Ko Phi Phi. The main area of the island very overdeveloped, overpriced, and the beaches are just ruined. Most people just come here to party.If you stay at the resorts on the north of the island, Phi Phi is beautiful, deserted, and a tropical paradise (but those places are expensive).Then again, hundreds of thousands of people visit each year and love it. So you’ll have to decide for yourself but if you do visit Ko Phi Phi, here’s what to do!
+
+    Located in Southern Thailand, this semi off-the-map island is one of my favorite places in the world.When I first came to Thailand, not a lot of people backpacked Ko Lipe.It saw few visitors and there was in indeed a last boat when the season ended.I came for three days and lived here for a month.I just loved it too muchHere on Ko Lipe, the super friendly locals bring in the daily catch for amazing seafood. The beaches are beautiful, the water warm, and the island cheap.In the last few years, lots of people travel to Ko Lipe now as the island has developed a lot (boats run all year round now). I’s not the sleepy little island it used to be but it’s still way less developed than many other destinations in Thailand.And, if you venture off Lipe to the nearby national park, you’ll find the pristine beaches that attracted people to the area in the first place.There’s some impressive snorkeling near the island, a few hiking trails, and lovely beaches. (The island is so small that it only takes a few hours to walk around it.)This Ko Lipe travel guide can help you determine what to see, how long to go for, how to save money, and everything in between!
+
+    http://localhost:8080/1594603087178-surface3.jpg
+
+    http://localhost:8080/1594603161276-surface1.jpg
+    http://localhost:8080/1594603202679-surface6.jpeg
+
+    If you expect the Surface Pro 7 to be a victory lap of sorts for Microsoft’s popular tablet line, then you might be disappointed. Despite the Microsoft Surface Pro 6 failing to be the generational leap that many of us were waiting for, it seems like Microsoft is in no hurry to make up for it. Either that, or the Redmond manufacturer is resting on its laurels and quite comfortable there.
+
+Unfortunately, the seventh iteration of the award-winning product is nothing but that – an iteration. There were plenty of opportunities for Microsoft to do more to improve the device, especially for its asking price – a powerful USB-C implementation, perhaps, or even just slimmer screen bezels. However, all the Surface Pro 7 really got were impressive gains in power. Although that is something at least, especially to users with aging tablets.
+
+Microsoft Surface
+
+Microsoft Surface Pro 7 at eGlobal Central BE for €749.99
+
+With the Microsoft Surface Pro 7 having none of the much-needed improvements we were expecting, this is certainly a big setback for the company. That’s especially because those gains in power affected its battery life, and because the new Surface Pro X only has basic performance that doesn’t quite justify its asking price. 
+
+Is this latest addition to the Surface Pro line even worth upgrading to? If we’re being honest, the Microsoft Surface Pro 7 appears more like the calm before a storm of innovation, and as such is tough to heartily recommend. One can only hope that Microsoft is simply saving the majority of its hardware and software innovations for even more exciting products like the Surface Neo that are coming in the near future.
+
+Surface Pro 7 configuration
+
+CPU: 1.1GHz Intel Core i5-1035G4 (quad-core, 6MB cache, up to 3.7GHz boost)Graphics: Intel Iris Plus GraphicsRAM: 8GB DDR4xScreen: 12.3-inch, 2,736 x 1,824 PixelSense display (Contrast ratio: 1,500:1, 100% sRGB color, 10-point multi-touch, 3:2 aspect ratio)Storage: 256GB SSDPorts: 1 x USB 3.0, 1 x USB-C 3.1, microSDXC card reader (UHS-I), headphone/mic jackConnectivity: 802.11ax Wi-Fi 6 (2 x 2 MIMO), Bluetooth 5Cameras: 8MP rear-facing, auto-focus camera (1080p HD); 5MP front-facing, 1080p HD cameraWeight: 1.7 pounds (771g)Size: 11.5 x 7.9 x 0.33 inches (292 x 201 x 8.5mm; W x D x H)
+
+Price and availability
+
+The new Surface Pro 7 released on October 22. Starting at $749 / £799 / AU$1,249 as with previous versions, it comes without the Type Cover ($129, £149, AU$249) and Surface Pen ($99, £99, AU$139) included. That means, this price is par for the course.
+
+That base configuration gets you an Intel Core i3 processor (CPU) 4GB of memory (RAM) and a 128GB solid-state drive (SSD), with the latter points upgradeable to as much as 16GB and 1TB capacity, respectively. Here’s how those upgrades break down:
+
+Intel Core i3 (4GB, 128GB) – $749/£799/AU$1,249
+Intel Core i5 (8GB, 128GB) – $899/£899/AU$1,499
+Intel Core i5 (8GB, 256GB) – $1,199/£1,169/AU$1,999
+Intel Core i5 (16GB, 128GB) – $1,399/£1,399/AU$2,349
+Intel Core i7 (16GB, 256GB) – $1,499/£1,449/AU$2,449
+Intel Core i7 (16GB, 512GB) – $1,899/£1,849/AU$3,149
+Intel Core i7 (16GB, 1TB) – $2,299/£2,249/AU$3,749
+
+This pricing, again, is inherited from previous versions, but it's still not a great deal when you're spending upwards of 1,000 bucks or quid to get the full experience with the accessories that are still sold separately.
+
+
+
+The Surface Pro 7 that we’re reviewing here will cost you $1,199 in the US. Again, that’s without the Surface Pen and Type Cover that Microsoft has included in our review sample. To get the full Surface Pro experience at this configuration, you’ll be spending around $1,460 in the US.
+
+That said, a similarly configured 12.9-inch iPad Pro – with 256GB of storage, the Smart Keyboard Folio and second generation Apple Pencil – will cost around $1,480 in the US. Apple is just as guilty for selling accessories separately that are arguably central to the experience.
+
+So, it doesn’t look like Microsoft is way out on left field with its pricing, and you’re getting a full mobile PC with Microsoft’s tablet option, but it’s nevertheless egregious.
+
+
+
+Design
+
+Microsoft may have finally included a USB-C port, but absolutely nothing else has changed about the Surface Pro 7 design from last year’s model. The device still measures 11.5 x 7.9 x 0.33 inches (292 x 201 x 8.5mm) and weighs 1.7 pounds (770g). The tablet also still comes in the same matte black and silver aluminum finishes.
+
+The tablet's touchscreen still comes in at 12.3 inches on the diagonal with a 2,736 x 1,824 resolution (267 pixels per inch) and 3:2 aspect ratio. It's just as sharp, vibrant and responsive to touch as the previous generation, which was already quite impressive. But, again, this specification hasn’t changed in years, and could use an update at least in features, such as HDR and enhanced color gamut coverage. Also, the bezels are awfully thick for a tablet of this price in 2019.
+
+Now having issued practically the same tablet for two years, it’s becoming clear that either Microsoft has reached its limits on the original Surface Pro design, which is unlikely, or the company is simply no longer interested in tweaking the Surface Pro any more – except for tinkering with the Pro X.
+
+Instead, it feels like Microsoft is far more inspired by its upcoming dual-screen devices, which will likely herald the future of the company’s hardware design – depending on how successful they are.
+
+
+Microsoft Surface Pro 7
+
+As for the most major Surface Pro 7 design change, we get USB-C at long last, but it’s on the USB 3.1 standard and not Thunderbolt 3. With that, you get the versatility of this new connection without the raw throughput of the Thunderbolt 3 technology.
+
+Apple and countless other competitors at similar price points have widely adopted Thunderbolt 3, which makes its absence in the Surface Pro 7 more glaring. While Apple didn't including it in the iPad Pro, it did with the similarly-priced 13-inch MacBook Pro, for example.
+
+Now, Microsoft has improved the device's studio microphones for stronger accuracy when using Cortana with your voice, but that's such a minor improvement it's hardly worth mentioning.
+
+In Microsoft’s favor, however, the Type Cover keyboard now has deeper-feeling travel as well as a bouncier feel as our fingers leave the keys. This is an upgrade for sure, though will certainly be an adjustment for longtime Surface Pro users – at least for a few minutes. Meanwhile, the Type Cover’s touchpad remains unchanged, and is just as smooth and responsive to the touch as ever.
+
+We also appreciate the Alcantara fabric that makes a return with this Type Cover, which appears and feels to be more tightly woven than before. Hopefully this will make the fabric more stain resistant, as Microsoft claims.
+
+All told, this is essentially the same Surface Pro you’ve known for years, only now it features a more versatile USB-C port in lieu of a DisplayPort connection. Why not drop the original USB-A as well for another USB-C? Who knows. There is a lot that could have been done to improve this product at the same price that simply wasn’t done, so forgive us for being nonplussed by the Surface Pro 7 design and feel.
+
+
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    transition: opacity 0s linear;
+    opacity: 1;
+  }
+  100% {
+    visibility: visible;
+    transition: visibility 0s linear;
+  }
+}
+#BulleOne {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s linear;
+  transition: opacity 0s linear;
+  animation: fade 10s linear infinite;
+  animation-delay: 4s;
+}
+
+#RightArmUp {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s linear;
+  transition: opacity 0s linear;
+  animation: fade 10s linear infinite;
+  animation-delay: 4s;
+}
+
+#Mouth {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s linear;
+  transition: opacity 0s linear;
+  animation: fade 10s linear infinite;
+  animation-delay: 4s;
+}
+
+#LeftArmDown {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s linear;
+  transition: opacity 0s linear;
+  animation: fade 10s linear infinite;
+  animation-delay: 4s;
+}
+
+@keyframes visible {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    transition: opacity 0s linear;
+    opacity: 0;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+#RightArmDown {
+  visibility: hidden;
+  opacity: 0;
+  animation: visible 10s linear infinite;
+  animation-delay: 4s;
+}
+
+#LeftArmUp {
+  visibility: hidden;
+  opacity: 0;
+  animation: visible 10s linear infinite;
+  animation-delay: 4s;
+}
+
+#BulleTwo {
+  visibility: hidden;
+  opacity: 0;
+  animation: visible 10s linear infinite;
+  animation-delay: 4s;
+}
+
+#Smile {
+  visibility: hidden;
+  opacity: 0;
+  animation: visible 10s linear infinite;
+  animation-delay: 4s;
+}
+
+#Laptop .path {
+  stroke-dasharray: 497;
+  stroke-dashoffset: 497;
+  animation: draw 1400ms ease-in-out 4ms forwards;
+}
+
+@keyframes draw {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}

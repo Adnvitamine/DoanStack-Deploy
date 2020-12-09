@@ -1,0 +1,91 @@
+#switch:checked + #FullFrame .mainBoard #BlogBody .commentArticle:hover {
+  box-shadow: 0px 2px 0px rgba(255, 136, 0, 1), 0px 4px 0px rgba(255, 238, 0, 1),
+    0px -2px 0px rgba(255, 136, 0, 1), 0px -4px 0px rgba(255, 238, 0, 1);
+}
+
+#switch:checked
+  + #FullFrame
+  .mainBoard
+  #BlogBody
+  .commentArticle
+  .ComponentTitle
+  div {
+  box-shadow: inset 0px -1px 4px #ffe601, inset -1px 0px 4px #ff7300;
+}
+
+#switch:checked
+  + #FullFrame
+  .mainBoard
+  #BlogBody
+  .commentArticle
+  .ComponentTitle
+  div
+  h1 {
+  background: linear-gradient(rgba(255, 136, 0, 0.6), rgba(255, 238, 0, 0.6));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: font-size 1s, text-shadow 5s;
+}
+
+#switch:checked
+  + #FullFrame
+  .mainBoard
+  #BlogBody
+  .commentArticle:hover
+  .ComponentTitle
+  div
+  h1 {
+  font-size: 50px;
+  background: linear-gradient(orange, yellow);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 30px rgba(255, 248, 0, 1), 0 0 35px rgba(255, 248, 0, 1),
+    0 0 40px rgba(255, 248, 0, 1);
+  transition: font-size 1s, text-shadow 5s;
+}
+
+#switch:checked + #FullFrame .mainBoard #BlogBody .readComments:hover {
+  box-shadow: 0px 2px 0px rgba(255, 136, 0, 1), 0px 4px 0px rgba(255, 238, 0, 1),
+    0px -2px 0px rgba(255, 136, 0, 1), 0px -4px 0px rgba(255, 238, 0, 1);
+}
+
+#switch:checked
+  + #FullFrame
+  .mainBoard
+  #BlogBody
+  .readComments
+  .ComponentTitle
+  div {
+  box-shadow: inset 0px -1px 4px #ffe601, inset -1px 0px 4px #ff7300;
+}
+
+#switch:checked
+  + #FullFrame
+  .mainBoard
+  #BlogBody
+  .readComments
+  .ComponentTitle
+  div
+  h1 {
+  background: linear-gradient(rgba(255, 136, 0, 0.6), rgba(255, 238, 0, 0.6));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: font-size 1s, text-shadow 5s;
+}
+
+#switch:checked
+  + #FullFrame
+  .mainBoard
+  #BlogBody
+  .readComments:hover
+  .ComponentTitle
+  div
+  h1 {
+  font-size: 50px;
+  background: linear-gradient(orange, yellow);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 30px rgba(255, 248, 0, 1), 0 0 35px rgba(255, 248, 0, 1),
+    0 0 40px rgba(255, 248, 0, 1);
+  transition: font-size 1s, text-shadow 5s;
+}
