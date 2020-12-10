@@ -25,11 +25,13 @@ app.use(express.static(__dirname + '/public'));
 */
 app.use(express.static("public"));
 
-var corsOptions = {
+/*var corsOptions = {
   origin: "http://localhost:8080",
 };
+corsOptions
+*/
 
-app.use(cors(corsOptions));
+app.use(cors());
 
 //app.use(fileUpload());
 const db = require("./models/");
