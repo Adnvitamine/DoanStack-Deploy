@@ -1,19 +1,12 @@
 const express = require("express");
-//const path = require('path');
-//const uuid = require('uuidv4');
 const bodyParser = require("body-parser");
-//const fileUpload = require('express-fileupload');
-//const morgan = require('morgan');
-const multer = require("multer");
-const path = require('path');
-//const fs = require('fs');
-//const multiparty = require('connect-multiparty');
-//const MultipartyMiddleware = multiparty({uploadDir:'./public'});
-//var multipart = require('connect-multiparty');
-//var multipartMiddleware = multipart({uploadDir: './public'});
-
-//const multipartMiddleware = multipart({uploadDir:'./public'});
 const cors = require("cors");
+const cloudinary = require("./config/cloudinaryConfig");
+const { uploader } = require ('cloudinary');
+const { multerUpload, dataUri, upload } = require("./middlewares/multer");
+const fs = require('fs');
+const path = require('path');
+
 
 const app = express();
 // middle ware
@@ -68,54 +61,12 @@ function initial() {
 
 }
 
-/*
-
-*/
-const storage = multer.diskStorage({
-  destination: function (req, file, cb) {
-    cb(null, "public");
-  },
-  filename: function (req, file, cb) {
-    cb(null, Date.now() + "-" + file.originalname);
-  },
-});
-
-var upload = multer({ storage: storage }).single("file");
-var multiupload = multer({ storage: storage }).array("file");
 
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // parse requests of content-type - application/json
 app.use(bodyParser.json({ limit: "800kb" }));
-
-// simple route
-/*app.get('/*', function(req, res) {
-  res.sendFile(path.join(__dirname, '../public/index.html'), function(err) {
-    if (err) {
-      res.status(500).send(err)
-    }
-  })
-})*/
-
-/*
-app.get("/", (req, res) => {
-  res.json({ message: "Welcome to DoanStack application." });
-});*/
-
-/*app.use((req, res, next) => {
-  res.append('Access-Control-Allow-Origin', ['*']);
-  res.append('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
-  res.append('Access-Control-Allow-Headers', 'Content-Type, x-access-token, Origin, Accept');
-  next();
-});*/
-
-/*
-app.get('/*', (req, res) => {
-  res.sendFile(__dirname + '/public/index.html');
-});*/
-
-
 
 
 require("./routes/auth.routes")(app);
@@ -128,122 +79,87 @@ require("./routes/articlecom.routes")(app);
 require("./routes/articleimg.routes")(app);
 require("./routes/productRating.routes")(app);
 
-// file upload api
-/*
-app.post('/upload', (req, res) => {
-  if (!req.files) {
-      return res.status(500).send({ msg: "file is not found" })
+
+app.post('/upload', multerUpload, (req, res) => {
+
+  if(req.file) {
+
+  const file = dataUri(req);
+  return uploader.upload(file).then((result) => {
+
+  const image = result.url;
+  return res.status(200).send({ name: req.file.originalname, path: image })
+  }).catch((err) => res.status(400).json({
+    message: 'something went wrong while processing your request',
+    data: {err}}))
   }
-      // accessing the file
-  const myFile = req.files.file;
-  //  mv() method places the file inside public directory
-  myFile.mv(`${__dirname}/public/${myFile.name}`, function (err) {
-      if (err) {
-          console.log(err)
-          return res.status(500).send({ msg: "Error occured" });
-      }
-      // returing the response with file path and name
-      return res.send({name: myFile.name, path: `/${myFile.name}`});
-  });
+  
 });
 
-*/
-app.post("/uploadfiles", (req, res) => {
-  upload(req, res, (err) => {
-    if (err) {
-      return res.json({ success: false, err });
-    }
-    return res.json({
-      success: true,
-      url: res.req.file.filename,
-      fileName: res.req.file.filename,
-    });
-  });
+app.post('/multiuploads', upload.array('file'), async(req, res)=>{
+const uploader = async (path) => await cloudinary.uploads(path, 'uploads');
+
+const urls = [];
+const files = req.files;
+for(const file of files){
+  const {path} = file;
+
+  const newPath = await uploader(path);
+
+  urls.push(newPath);
+  
+  fs.unlinkSync(path);
+}
+
+res.status(200).json({
+  message: "Images Uploaded Successfully",
+  data: urls
+}).catch((err) => res.status(400).json({
+  message: 'something went wrong while processing your request',
+  data: {err}}))
+})
+
+app.post('/uploadfiles', multerUpload, (req, res) => {
+
+if(req.file) {
+
+const file = dataUri(req);
+return uploader.upload(file).then((result) => {
+
+const image = result.url;
+return res.status(200).json({
+  success: true,
+  url: image,
+  fileName: res.req.file.originalname,
+})
+}).catch((err) => res.status(400).json({
+  message: 'something went wrong while processing your request',
+  data: {err}}))
+}
+  
 });
 
-app.post("/upload", function (req, res) {
-  console.log(req);
-  upload(req, res, function (err) {
-    if (err instanceof multer.MulterError) {
-      return res.status(500).json(err);
-    } else if (err) {
-      return res.status(500).json(err);
-    }
-    console.log(req.file);
-    return res
-      .status(200)
-      .send({ name: req.file.filename, path: `/${req.file.filename}` });
-  });
+
+app.post('/ckeditorupload', multerUpload, (req, res) => {
+
+if(req.file) {
+
+const file = dataUri(req);
+return uploader.upload(file).then((result) => {
+
+const image = result.url;
+return res.status(200).send({ url: image })
+}).catch((err) => res.status(400).json({
+  message: 'something went wrong while processing your request',
+  data: {err}}))
+}
+
 });
 
-app.post("/multiupload", function (req, res) {
-  console.log(req.files);
-  multiupload(req, res, function (err) {
-    if (err instanceof multer.MulterError) {
-      return res.status(500).json(err);
-    } else if (err) {
-      return res.status(500).json(err);
-    }
-    //console.log(req);
-    return res.status(200).send(req.files);
-  });
+
+app.get('*', function(req, res) {
+  res.sendFile( path.join(__dirname, 'public/index.html') );
 });
-
-app.post("/ckeditorupload", upload, function (req, res) {
-  var html;
-  var fs = require("fs");
-  fs.readFile(req.file.path, function (err, data) {
-    if (err) {
-      res.send({ error: err });
-    } else {
-      var imageinfo = "";
-      imageinfo =
-        "{\n " +
-        '    "uploaded": 1,\n' +
-        '    "fileName": "' +
-        req.file.filename +
-        '",\n' +
-        '    "url": "/' +
-        req.file.filename +
-        '"\n' +
-        "}";
-
-      console.log(imageinfo);
-
-      res.send(imageinfo);
-    }
-  });
-
-  // don't forget to delete all req.files when done
-});
-
-//console.log(req.files.upload);
-/*
-  var fs = require('fs');
-
-    fs.readFile(req.files.upload.path, function (err, data) {
-        var newPath = __dirname + '/../public/' + req.files.upload.name;
-        fs.writeFile(newPath, data, function (err) {
-            if (err) console.log({err: err});
-            else {
-                html = "";
-                html += "<script type='text/javascript'>";
-                html += "    var funcNum = " + req.query.CKEditorFuncNum + ";";
-                html += "    var url     = \"/public/" + req.files.upload.name + "\";";
-                html += "    var message = \"Uploaded file successfully\";";
-                html += "";
-                html += "    window.parent.CKEDITOR.tools.callFunction(funcNum, url, message);";
-                html += "</script>";
-
-                res.send(html);
-            }
-        });
-    });*/
-
-
-    app.get('*', function(req, res) {
-      res.sendFile( path.join(__dirname, 'public/index.html') );
-    });
 
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;

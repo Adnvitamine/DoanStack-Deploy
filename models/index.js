@@ -1,10 +1,9 @@
-//const config = require("../config/db.config.js");
-const env = require("../config/db.heroku.js");
+const config = require("../config/db.config.js");
+//const env = require("../config/db.heroku.js");
 
 const Sequelize = require("sequelize");
 
-/**/
-const sequelize = new Sequelize(env.database, env.username, env.password, {
+/*const sequelize = new Sequelize(env.database, env.username, env.password, {
   host: env.host,
   dialect: env.dialect,
   operatorsAliases: false,
@@ -15,8 +14,10 @@ const sequelize = new Sequelize(env.database, env.username, env.password, {
     acquire: env.pool.acquire,
     idle: env.pool.idle
   }
-});
-/*const sequelize = new Sequelize(config.DB, config.USER, config.PASSWORD, {
+});*/
+
+/**/
+const sequelize = new Sequelize(config.DB, config.USER, config.PASSWORD, {
   host: config.HOST,
   dialect: config.dialect,
   operatorsAliases: 0,
@@ -27,8 +28,7 @@ const sequelize = new Sequelize(env.database, env.username, env.password, {
     acquire: config.pool.acquire,
     idle: config.pool.idle,
   },
-});*/
-
+});
 
 
 const db = {};
