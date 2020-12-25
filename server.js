@@ -100,7 +100,7 @@ app.post('/upload', multerUpload, (req, res) => {
   
 });
 
-app.post('/multiuploads', upload.array('file'), async(req, res)=>{
+app.post('/multiuploads', upload.array('file', 5), async(req, res)=>{
 const uploader = async (path) => await cloudinary.uploads(path, 'uploads');
 
 const urls = [];
@@ -118,9 +118,8 @@ for(const file of files){
 res.status(200).json({
   message: "Images Uploaded Successfully",
   data: urls
-}).catch((err) => res.status(400).json({
-  message: 'something went wrong while processing your request',
-  data: {err}}))
+});
+
 })
 
 app.post('/uploadfiles', multerUpload, (req, res) => {
