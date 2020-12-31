@@ -6,7 +6,7 @@ const { uploader } = require ('cloudinary');
 const { multerUpload, dataUri, upload } = require("./middlewares/multer");
 const fs = require('fs');
 const path = require('path');
-require('newrelic');
+// require('newrelic');
 
 
 const app = express();
