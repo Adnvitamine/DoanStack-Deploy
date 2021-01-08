@@ -81,7 +81,7 @@ app.post('/upload', multerUpload, (req, res) => {
   const file = dataUri(req);
   return uploader.upload(file).then((result) => {
 
-  const image = result.url;
+  const image = result.secure_url;
   return res.status(200).send({ name: req.file.originalname, path: image })
   }).catch((err) => res.status(400).json({
     message: 'something went wrong while processing your request',
@@ -119,7 +119,7 @@ if(req.file) {
 const file = dataUri(req);
 return uploader.upload(file).then((result) => {
 
-const image = result.url;
+const image = result.secure_url;
 return res.status(200).json({
   success: true,
   url: image,
@@ -140,7 +140,7 @@ if(req.file) {
 const file = dataUri(req);
 return uploader.upload(file).then((result) => {
 
-const image = result.url;
+const image = result.secure_url;
 return res.status(200).send({ url: image })
 }).catch((err) => res.status(400).json({
   message: 'something went wrong while processing your request',
