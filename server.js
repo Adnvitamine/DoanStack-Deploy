@@ -13,24 +13,14 @@ const app = express();
 
 app.use(cors({origin: '*'}));
 
-// middle ware
-/*
-app.use(express.static("public")); //to access the files in public folder
-*/
-/*
-app.use(express.static(__dirname + '/public'));
-*/
-app.use(express.static("public"));
-
 /*var corsOptions = {
   origin: "http://localhost:8080",
 };
 corsOptions
 */
 
+app.use(express.static("public"));
 
-
-//app.use(fileUpload());
 const db = require("./models/");
 const Role = db.role;
 
