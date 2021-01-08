@@ -6,6 +6,7 @@ const { uploader } = require ('cloudinary');
 const { multerUpload, dataUri, upload } = require("./middlewares/multer");
 const fs = require('fs');
 const path = require('path');
+const newStart = require("./middlewares/newStart");
 // require('newrelic');
 
 
@@ -21,40 +22,7 @@ corsOptions
 
 app.use(express.static("public"));
 
-const db = require("./models/");
-const Role = db.role;
-
-db.sequelize
-  .sync({
-    /*force: true,*/
-    
-  })
-  .then(() => {
-    console.log(
-      //"Drop and Resync Db"
-      "No Drop & Resync"
-    );
-    //initial();
-  });
-
-function initial() {
-  Role.create({
-    id: 1,
-    name: "user",
-  });
-
-  Role.create({
-    id: 2,
-    name: "moderator",
-  });
-
-  Role.create({
-    id: 3,
-    name: "admin",
-  });
-
-}
-
+newStart();
 
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
