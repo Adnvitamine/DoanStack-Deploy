@@ -6,7 +6,7 @@ const { uploader } = require ('cloudinary');
 const { multerUpload, dataUri, upload } = require("./middlewares/multer");
 const fs = require('fs');
 const path = require('path');
-//const newStart = require("./middlewares/newStart");
+const newStart = require("./middlewares/newStart");
 // require('newrelic');
 
 
@@ -22,7 +22,7 @@ corsOptions
 
 app.use(express.static("public"));
 
-//newStart();
+newStart();
 
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -40,7 +40,7 @@ require("./routes/article.routes")(app);
 require("./routes/articlecom.routes")(app);
 require("./routes/articleimg.routes")(app);
 require("./routes/productRating.routes")(app);
-
+require("./routes/mail.routes")(app);
 
 app.post('/upload', multerUpload, (req, res) => {
 
