@@ -3,6 +3,7 @@ const env = {
     username: 'oophigcpnbjmef',
     password: '9ea376b84aca184482f25fdc628cbaf94b0696d30faa9aa1ca5e19ca7fa5499f',
     host: 'ec2-52-71-153-228.compute-1.amazonaws.com',
+    URI: 'postgres://oophigcpnbjmef:9ea376b84aca184482f25fdc628cbaf94b0696d30faa9aa1ca5e19ca7fa5499f@ec2-52-71-153-228.compute-1.amazonaws.com:5432/ddlbc2oa4b3o9e',
     port: 5432,
     dialect: 'postgres',
     pool: {
