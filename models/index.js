@@ -10,11 +10,18 @@ const sequelize = new Sequelize(env.database, env.username, env.password, {
   dialect: env.dialect,
   operatorsAliases: false,
   dialectOptions: {
-    ssl: {      /* <----- Add SSL option */
+      ssl: {
+          rejectUnauthorized: false
+      }
+  },
+  /*
+  dialectOptions: {
+    ssl: {    
       require: true,
       rejectUnauthorized: false 
     }
   },
+  */
   pool: {
     max: env.max,
     min: env.pool.min,
