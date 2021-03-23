@@ -26,9 +26,10 @@ const Sequelize = require("sequelize");
 }*/
 
 const sequelize = new Sequelize(process.env.DATABASE_URL, {
+  ssl: true,
   dialect: 'postgres',
-    protocol: 'postgres',
-    dialectOptions: {
+  protocol: 'postgres',
+  dialectOptions: {
         ssl: {
             require: true,
             rejectUnauthorized: false
