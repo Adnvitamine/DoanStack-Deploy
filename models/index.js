@@ -1,12 +1,9 @@
 //const config = require("../config/db.config.js");
-const env = require("../config/db.heroku.js");
+//const env = require("../config/db.heroku.js");
 
 const Sequelize = require("sequelize");
 
-/**/
-
-const sequelize = new Sequelize(
-  {
+/*{
   database: env.database,
   username: env.username,
   password: env.password,
@@ -26,6 +23,17 @@ const sequelize = new Sequelize(
     acquire: env.pool.acquire,
     idle: env.pool.idle
   }
+}*/
+
+const sequelize = new Sequelize(process.env.DATABASE_URL, {
+  dialect: 'postgres',
+    protocol: 'postgres',
+    dialectOptions: {
+        ssl: {
+            require: true,
+            rejectUnauthorized: false
+        }
+    }
 });
 
 /*const sequelize = new Sequelize(config.DB, config.USER, config.PASSWORD, {
