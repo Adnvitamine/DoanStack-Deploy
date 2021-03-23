@@ -2,7 +2,6 @@
 const env = require("../config/db.heroku.js");
 
 const Sequelize = require("sequelize");
-const { database } = require("../config/db.heroku.js");
 
 /**/
 
