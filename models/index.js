@@ -5,12 +5,17 @@ const Sequelize = require("sequelize");
 
 /**/
 
-const sequelize = new Sequelize(env.database, env.username, env.password, {
+const sequelize = new Sequelize(env.database, env.username, env.password,
+  env.URI, 
+  {
   host: env.host,
   dialect: env.dialect,
   operatorsAliases: false,
   dialectOptions: {
-    ssl: true
+    ssl: {
+      require: true, // This will help you. But you will see nwe error
+      rejectUnauthorized: false // This line will fix new error
+    }
   },
   /*
   dialectOptions: {
