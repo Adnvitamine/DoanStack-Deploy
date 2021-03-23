@@ -6,7 +6,6 @@ const Sequelize = require("sequelize");
 /**/
 
 const sequelize = new Sequelize(env.database, env.username, env.password,
-  env.URI, 
   {
   host: env.host,
   dialect: env.dialect,
