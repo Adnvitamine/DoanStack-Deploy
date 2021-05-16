@@ -28,6 +28,7 @@ function initial() {
       id: 1,
       name: "user",
     });
+    
   
     Role.create({
       id: 2,
