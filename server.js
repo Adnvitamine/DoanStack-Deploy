@@ -1,3 +1,4 @@
+const sslRedirect = require("heroku-ssl-redirect");
 const express = require("express");
 //const bodyParser = require("body-parser");
 const cors = require("cors");
@@ -11,6 +12,9 @@ const newStart = require("./middlewares/newStart");
 
 
 const app = express();
+
+// enable ssl redirect
+app.use(sslRedirect());
 
 app.use(cors({origin: '*'}));
 
