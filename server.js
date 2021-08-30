@@ -30,6 +30,17 @@ app.use(express.urlencoded({ extended: true }));
 // parse requests of content-type - application/json
 app.use(express.json({ limit: "800kb" }));
 
+app.use((req, res, next) => {
+  if (process.env.NODE_ENV === 'production') {
+      if (req.headers.host === 'doanstack.herokuapp.com')
+          return res.redirect(301, 'https://www.doanstack.com');
+      if (req.headers['x-forwarded-proto'] !== 'https')
+          return res.redirect('https://' + req.headers.host + req.url);
+      else
+          return next();
+  } else
+      return next();
+});
 
 require("./routes/auth.routes")(app);
 require("./routes/user.routes")(app);
