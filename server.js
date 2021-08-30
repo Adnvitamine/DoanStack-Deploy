@@ -1,3 +1,4 @@
+import sslRedirect from "heroku-ssl-redirect";
 const express = require("express");
 //const bodyParser = require("body-parser");
 const cors = require("cors");
@@ -117,6 +118,8 @@ return res.status(200).send({ url: image })
 }
 
 });
+
+app.use(sslRedirect());
 
 app.get('*', function(req, res) {
   res.sendFile( path.join(__dirname, 'public/index.html') );
