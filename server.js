@@ -14,6 +14,8 @@ const newStart = require("./middlewares/newStart");
 const app = express();
 
 
+app.use(sslRedirect());
+
 app.use(cors({origin: '*'}));
 
 /*var corsOptions = {
@@ -118,8 +120,6 @@ return res.status(200).send({ url: image })
 }
 
 });
-
-app.use(sslRedirect());
 
 app.get('*', function(req, res) {
   res.sendFile( path.join(__dirname, 'public/index.html') );
