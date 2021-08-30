@@ -1,5 +1,4 @@
 const express = require("express");
-const secure = require("ssl-express-www");
 //const bodyParser = require("body-parser");
 const cors = require("cors");
 const cloudinary = require("./config/cloudinaryConfig");
@@ -12,8 +11,6 @@ const newStart = require("./middlewares/newStart");
 
 
 const app = express();
-
-app.use(secure);
 
 app.use(cors({origin: '*'}));
 
