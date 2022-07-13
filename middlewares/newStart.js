@@ -19,6 +19,7 @@ function newStart() {
     );
     //initial();
     //createAdmin();
+    //createAdminTwo();
     
   });
 }
@@ -46,6 +47,33 @@ function initial() {
     User.create({
       username: "Adn",
       email: "doan88nguyen@gmail.com",
+      password: "admin123",
+      passwordcrypt: bcrypt.hashSync("admin123", 8),
+    })
+      .then((user) => {
+        const authorities = ["admin", "moderator", "user"];
+        if (authorities) {
+          Role.findAll({
+            where: {
+              name: {
+                [Op.or]: authorities,
+              },
+            },
+          }).then((roles) => {
+            user.setRoles(roles).then((res) => {
+              console.log("ok");
+            });
+          });
+        }})
+      .catch((err) => {
+        console.log(err.message);
+      });
+  }
+
+  function createAdminTwo(){
+    User.create({
+      username: "Bulent",
+      email: "bulent@gmail.com",
       password: "admin123",
       passwordcrypt: bcrypt.hashSync("admin123", 8),
     })
