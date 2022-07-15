@@ -8,18 +8,18 @@ function newStart() {
 
     db.sequelize
   .sync({
-    //force: true
-    alter: true
+    force: true
+    //alter: true
   })
   .then(() => {
     console.log(
-      //"Drop and Resync Db"
+      "Drop and Resync Db"
       //"No Drop & Resync"
-      "Alter & Resync"
+      //"Alter & Resync"
     );
-    //initial();
-    //createAdmin();
-    //createAdminTwo();
+    initial();
+    createAdmin();
+    createAdminTwo();
     
   });
 }
@@ -45,7 +45,7 @@ function initial() {
   
   function createAdmin(){
     User.create({
-      username: "Adn",
+      username: "Admin",
       email: "doan88nguyen@gmail.com",
       password: "admin123",
       passwordcrypt: bcrypt.hashSync("admin123", 8),
@@ -72,8 +72,8 @@ function initial() {
 
   function createAdminTwo(){
     User.create({
-      username: "Bulent",
-      email: "bulent@gmail.com",
+      username: "Adn",
+      email: "likevitamine@gmail.com",
       password: "admin123",
       passwordcrypt: bcrypt.hashSync("admin123", 8),
     })
