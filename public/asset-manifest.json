@@ -1,25 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.37b1e73d.css",
-    "main.js": "/static/js/main.374c860f.js",
-    "static/media/Montserrat-BoldItalic.ttf": "/static/media/Montserrat-BoldItalic.a32ae5d9b605d950167e.ttf",
-    "static/media/Montserrat-Italic.ttf": "/static/media/Montserrat-Italic.e7728c27ba36b97eb82f.ttf",
-    "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
-    "static/media/Montserrat-Bold.ttf": "/static/media/Montserrat-Bold.079ca05d3ded9bc107ab.ttf",
+    "main.css": "/static/css/main.d64d7e48.css",
+    "main.js": "/static/js/main.7ff979f3.js",
     "static/media/logo2.gif": "/static/media/logo2.1b91e7319ff571cf6cdd.gif",
-    "static/media/Roboto-BoldItalic.ttf": "/static/media/Roboto-BoldItalic.ad2445ca4e46908fbf7b.ttf",
-    "static/media/Roboto-Italic.ttf": "/static/media/Roboto-Italic.2a1b89d7506c26fb931b.ttf",
-    "static/media/Roboto-Regular.ttf": "/static/media/Roboto-Regular.03523cf578d69fa92322.ttf",
-    "static/media/Roboto-Bold.ttf": "/static/media/Roboto-Bold.4f39c5796e60c9d8e732.ttf",
-    "static/media/Lato-Regular.ttf": "/static/media/Lato-Regular.9919edff6283018571ad.ttf",
-    "static/media/Oxygen-Bold.ttf": "/static/media/Oxygen-Bold.8c64e0603f80aa73a884.ttf",
-    "static/media/Oxygen-Regular.ttf": "/static/media/Oxygen-Regular.9d375dd5d21ee7c8c01d.ttf",
+    "static/media/PublicSans-ExtraBoldItalic.ttf": "/static/media/PublicSans-ExtraBoldItalic.d6fc3977a128f721b97e.ttf",
+    "static/media/PublicSans-BoldItalic.ttf": "/static/media/PublicSans-BoldItalic.b7ae6ad6a2a89d33af78.ttf",
+    "static/media/PublicSans-SemiBoldItalic.ttf": "/static/media/PublicSans-SemiBoldItalic.8295630c8a91eb801cf3.ttf",
+    "static/media/PublicSans-Regular.ttf": "/static/media/PublicSans-Regular.c1439e71515b92d8b82e.ttf",
+    "static/media/PublicSans-ExtraBold.ttf": "/static/media/PublicSans-ExtraBold.7cb56dc848830454511c.ttf",
+    "static/media/PublicSans-SemiBold.ttf": "/static/media/PublicSans-SemiBold.4afb1bb9ff503c86cffa.ttf",
     "index.html": "/index.html",
-    "main.37b1e73d.css.map": "/static/css/main.37b1e73d.css.map",
-    "main.374c860f.js.map": "/static/js/main.374c860f.js.map"
+    "main.d64d7e48.css.map": "/static/css/main.d64d7e48.css.map",
+    "main.7ff979f3.js.map": "/static/js/main.7ff979f3.js.map"
   },
   "entrypoints": [
-    "static/css/main.37b1e73d.css",
-    "static/js/main.374c860f.js"
+    "static/css/main.d64d7e48.css",
+    "static/js/main.7ff979f3.js"
   ]
 }
