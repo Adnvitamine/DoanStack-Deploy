@@ -1,29 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.b3c563bf.css",
-    "main.js": "/static/js/main.8b46c7e1.js",
+    "main.css": "/static/css/main.d4a8c416.css",
+    "main.js": "/static/js/main.d606dcb7.js",
+    "static/media/bgAnim.gif": "/static/media/bgAnim.58a52e0ee14387de8445.gif",
     "static/media/doanPic.png": "/static/media/doanPic.235b6e980f76ecfd570f.png",
     "static/media/cloud2.png": "/static/media/cloud2.ad96f09539b3800f482d.png",
-    "static/media/TwerkDog.gif": "/static/media/TwerkDog.22203ad3b64cc4de0dcb.gif",
     "static/media/star2d.png": "/static/media/star2d.c7e89ec410ad3aed43e9.png",
+    "static/media/space.gif": "/static/media/space.d5677525994820cb9e30.gif",
     "static/media/logo2.gif": "/static/media/logo2.1b91e7319ff571cf6cdd.gif",
     "static/media/cardbg2.gif": "/static/media/cardbg2.4d18dd2f9e071f73ec2e.gif",
     "static/media/planehd.png": "/static/media/planehd.b11b60f19d7567a3d6ff.png",
-    "static/media/PublicSans-ExtraBoldItalic.ttf": "/static/media/PublicSans-ExtraBoldItalic.d6fc3977a128f721b97e.ttf",
-    "static/media/PublicSans-BoldItalic.ttf": "/static/media/PublicSans-BoldItalic.b7ae6ad6a2a89d33af78.ttf",
-    "static/media/PublicSans-SemiBoldItalic.ttf": "/static/media/PublicSans-SemiBoldItalic.8295630c8a91eb801cf3.ttf",
-    "static/media/PublicSans-Italic.ttf": "/static/media/PublicSans-Italic.deba465a840cb27eb62b.ttf",
-    "static/media/PublicSans-Regular.ttf": "/static/media/PublicSans-Regular.c1439e71515b92d8b82e.ttf",
-    "static/media/PublicSans-ExtraBold.ttf": "/static/media/PublicSans-ExtraBold.7cb56dc848830454511c.ttf",
-    "static/media/PublicSans-SemiBold.ttf": "/static/media/PublicSans-SemiBold.4afb1bb9ff503c86cffa.ttf",
     "static/media/talenttogrow.gif": "/static/media/talenttogrow.afd0561543960106f532.gif",
     "static/media/hire-me.gif": "/static/media/hire-me.3766cd9c81ce2283308a.gif",
     "index.html": "/index.html",
-    "main.b3c563bf.css.map": "/static/css/main.b3c563bf.css.map",
-    "main.8b46c7e1.js.map": "/static/js/main.8b46c7e1.js.map"
+    "main.d4a8c416.css.map": "/static/css/main.d4a8c416.css.map",
+    "main.d606dcb7.js.map": "/static/js/main.d606dcb7.js.map"
   },
   "entrypoints": [
-    "static/css/main.b3c563bf.css",
-    "static/js/main.8b46c7e1.js"
+    "static/css/main.d4a8c416.css",
+    "static/js/main.d606dcb7.js"
   ]
 }
