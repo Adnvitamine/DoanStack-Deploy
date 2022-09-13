@@ -6,7 +6,12 @@ const Op = db.Sequelize.Op;
 
 exports.create = (req, res) => {
   // First we validate request
-  if (!req.body.title && !req.body.content && !req.body.author) {
+  if (
+    !req.body.title &&
+    !req.body.content &&
+    !req.body.author &&
+    !req.body.description
+  ) {
     res.status(400).send({
       message: "Article name, description, vendor cannot be empty",
     });
@@ -28,11 +33,14 @@ exports.create = (req, res) => {
   } else {
     const article = {
       title: req.body.title,
+      description: req.body.description,
+      color: req.body.color,
       content: req.body.content,
       author: req.body.author,
       author_id: req.body.author_id,
       author_avatar: req.body.author_avatar,
       image: req.body.image,
+      link: "",
       category: req.body.category,
       published: req.body.published ? req.body.published : false,
     };
@@ -50,7 +58,7 @@ exports.create = (req, res) => {
   }
 };
 
-// RETRIEVE ALL PRODUCTS FROM DATABASE
+// RETRIEVE ALL ARTICLES FROM DATABASE
 exports.findAll = (req, res) => {
   const name = req.query.name;
   var condition = name ? { name: { [Op.iLike]: `%${name}` } } : null;
@@ -67,7 +75,7 @@ exports.findAll = (req, res) => {
     });
 };
 
-// FIND A SINGLE PRODUCT WITH AN ID
+// FIND A SINGLE ARTICLE WITH AN ID
 exports.findOne = (req, res) => {
   const id = req.params.id;
 
@@ -84,7 +92,7 @@ exports.findOne = (req, res) => {
     });
 };
 
-// FIND ALL PRODUCT BY CATEGORY
+// FIND ALL ARTICLE BY CATEGORY
 exports.findAllByCategory = (req, res) => {
   const category = req.params.category;
   Article.findAll({
@@ -102,10 +110,14 @@ exports.findAllByCategory = (req, res) => {
     });
 };
 
-// FIND ALL PUBLISHED PRODUCTS
+// FIND ALL PUBLISHED ARTICLES
 exports.findArticlePublishedTrue = (req, res) => {
+  // const category = req.params.category;
   Article.findAll({
-    where: { published: true },
+    where: {
+      published: true,
+      [Op.not]: [{ category: ["Projects", "Snippets"] }],
+    },
   })
     .then((data) => {
       res.send(data);
@@ -117,7 +129,65 @@ exports.findArticlePublishedTrue = (req, res) => {
       });
     });
 };
-//FIND ALL PRODUCT WITH A SPECIFIED AUTHOR
+
+// FIND ALL PUBLISHED Portfolio with category = ['Projects', 'Snippets']
+exports.findPortfolioPublishedTrue = (req, res) => {
+  // const category = req.params.category;
+  Article.findAll({
+    where: {
+      published: true,
+      [Op.and]: [{ category: ["Projects", "Snippets"] }],
+    },
+  })
+    .then((data) => {
+      res.send(data);
+    })
+    .catch((err) => {
+      res.status(300).send({
+        message:
+          err.message || "Error retrieving all portfolio with Status = true",
+      });
+    });
+};
+
+exports.findProjectsPublishedTrue = (req, res) => {
+  Article.findAll({
+    where: {
+      published: true,
+      [Op.and]: [{ category: ["Projects"] }],
+    },
+  })
+    .then((data) => {
+      res.send(data);
+    })
+    .catch((err) => {
+      res.status(300).send({
+        message:
+          err.message || "Error retrieving projects with published = true",
+      });
+    });
+};
+
+// FIND ALL SNIPPETS PUBLISHED TRUE
+exports.findSnippetsPublishedTrue = (req, res) => {
+  Article.findAll({
+    where: {
+      published: true,
+      [Op.and]: [{ category: ["Snippets"] }],
+    },
+  })
+    .then((data) => {
+      res.send(data);
+    })
+    .catch((err) => {
+      res.status(300).send({
+        message:
+          err.message || "Error retrieving snipppets with published = true",
+      });
+    });
+};
+
+//FIND ALL ARTICLE WITH A SPECIFIED AUTHOR
 exports.findAllByAuthor = (req, res) => {
   const author = req.params.author;
 
@@ -136,7 +206,7 @@ exports.findAllByAuthor = (req, res) => {
     });
 };
 
-//FIND ALL PRODUCT WITH A SPECIFIED AUTHOR Id
+//FIND ALL ARTICLE WITH A SPECIFIED AUTHOR Id
 exports.findAllByAuthorId = (req, res) => {
   const author_id = req.params.id;
 
@@ -150,12 +220,12 @@ exports.findAllByAuthorId = (req, res) => {
       res.status(300).send({
         message:
           err.message ||
-          `Error retrieving all the products with Vendor_id=${author_id}`,
+          `Error retrieving all the ARTICLEs with Vendor_id=${author_id}`,
       });
     });
 };
 
-// UPDATE A PRODUCT WITH A SPECIFIED ID
+// UPDATE A ARTICLE WITH A SPECIFIED ID
 exports.update = (req, res) => {
   const id = req.params.id;
 
@@ -180,7 +250,7 @@ exports.update = (req, res) => {
     });
 };
 
-// DELETE A PRODUCT WITH A SPECIFIED ID IN THE REQUEST
+// DELETE A ARTICLE WITH A SPECIFIED ID IN THE REQUEST
 exports.delete = (req, res) => {
   const id = req.params.id;
 
@@ -205,7 +275,7 @@ exports.delete = (req, res) => {
     });
 };
 
-// DELETE ALL PRODUCTS FROM DATABASE
+// DELETE ALL ARTICLES FROM DATABASE
 exports.deleteAll = (req, res) => {
   Article.destroy({
     where: {},

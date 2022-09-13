@@ -13,6 +13,12 @@ module.exports = (app) => {
   router.get("/post/:category", articles.findAllByCategory);
   // Retrieve all articles with status = true
   router.get("/post/published/true", articles.findArticlePublishedTrue);
+  // Retrieve all articles with status  = true and Category = ['Projects', 'Snippets']
+  router.get("/portfolio/true", articles.findPortfolioPublishedTrue);
+  // Retrieve all projects with status = true
+  router.get("/portfolio/projects/true", articles.findProjectsPublishedTrue);
+  // Retrieve all snippets with status = true
+  router.get("/portfolio/snippets/true", articles.findSnippetsPublishedTrue);
   // Retrieve all articles by Vendor name
   router.get("/author/:author", articles.findAllByAuthor);
   // Retrieve all articles by Author name

@@ -10,13 +10,22 @@ module.exports = (sequelize, Sequelize) => {
       type: Sequelize.STRING(50),
     },
     author_avatar: {
-      type: Sequelize.STRING(255),
+      type: Sequelize.STRING(500),
     },
     image: {
-      type: Sequelize.STRING(255),
+      type: Sequelize.STRING(500),
+    },
+    link: {
+      type: Sequelize.STRING(5000),
+    },
+    description: {
+      type: Sequelize.STRING(10000),
+    },
+    color: {
+      type: Sequelize.STRING(50),
     },
     content: {
-      type: Sequelize.STRING(10000),
+      type: Sequelize.STRING(20000),
     },
     category: {
       type: Sequelize.STRING(50),
