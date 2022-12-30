@@ -7,18 +7,18 @@ var bcrypt = require("bcryptjs");
 function newStart() {
   db.sequelize
     .sync({
-      //force: true,
-      alter: true,
+      force: true,
+      //alter: true,
     })
     .then(() => {
       console.log(
-        //"Drop and Resync Db"
-        // "No Drop & Resync"
-        "Alter & Resync"
+        "Drop and Resync Db"
+        //"No Drop & Resync"
+        //"Alter & Resync"
       );
-      //initial();
-      //createAdmin();
-      //createAdminTwo();
+      initial();
+      createAdmin();
+      createAdminTwo();
     });
 }
 
