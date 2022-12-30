@@ -1,17 +1,17 @@
 const env = {
-    database: 'ddlbc2oa4b3o9e',
-    username: 'oophigcpnbjmef',
-    password: '9ea376b84aca184482f25fdc628cbaf94b0696d30faa9aa1ca5e19ca7fa5499f',
-    host: 'ec2-52-71-153-228.compute-1.amazonaws.com',
-    URI: 'postgres://oophigcpnbjmef:9ea376b84aca184482f25fdc628cbaf94b0696d30faa9aa1ca5e19ca7fa5499f@ec2-52-71-153-228.compute-1.amazonaws.com:5432/ddlbc2oa4b3o9e?sslmode=require',
-    port: 5432,
-    dialect: 'postgres',
-    pool: {
-      max: 5,
-      min: 0,
-      acquire: 30000,
-      idle: 10000
-    }
-  };
-   
-  module.exports = env;
+  database: "d5r8a0154d2eji",
+  username: "imxgohiaesvjvg",
+  password: "5ba5291db03be0dede2feb9275081bfcf706b4dfcfda9b5289ea7790a3eeb1e8",
+  host: "ec2-54-157-79-121.compute-1.amazonaws.com",
+  URI: "postgres://imxgohiaesvjvg:5ba5291db03be0dede2feb9275081bfcf706b4dfcfda9b5289ea7790a3eeb1e8@ec2-54-157-79-121.compute-1.amazonaws.com:5432/d5r8a0154d2eji",
+  port: 5432,
+  dialect: "postgres",
+  pool: {
+    max: 5,
+    min: 0,
+    acquire: 30000,
+    idle: 10000,
+  },
+};
+
+module.exports = env;
